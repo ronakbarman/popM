@@ -225,6 +225,8 @@ public class DetailActivity extends AppCompatActivity implements TrailerRecycler
     public void selectedTrailer(String key) {
         NetworkUtilities.trailer_intent(this,key);
     }
+
+
     @OnClick(R.id.fav_b)
     public void onClick(View view){
         if (favorites) {
@@ -246,7 +248,7 @@ public class DetailActivity extends AppCompatActivity implements TrailerRecycler
 
     private void addFAV(){
         ContentValues contentValues = new ContentValues();
-        contentValues.put(FavoritesBaseColumnContract.FavoritesEntry._ID,Id);
+        contentValues.put(FavoritesBaseColumnContract.FavoritesEntry.COLUMN_ID,Id);
         contentValues.put(FavoritesBaseColumnContract.FavoritesEntry.COLUMN_TITLE,title);
         contentValues.put(FavoritesBaseColumnContract.FavoritesEntry.COLUMN_RELEASE_DATE,ReleaseDate);
         contentValues.put(FavoritesBaseColumnContract.FavoritesEntry.COLUMN_AVERAGE_VOTE,AverageVote);
@@ -301,7 +303,7 @@ public class DetailActivity extends AppCompatActivity implements TrailerRecycler
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.shareoption, menu);
         MenuItem menuItem = menu.findItem(R.id.a_share);
-        if (favorites){
+        if (trailors){
             menuItem.setVisible(true);
         }
         return  true;
