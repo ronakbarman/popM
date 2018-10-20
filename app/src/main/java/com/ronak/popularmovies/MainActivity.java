@@ -16,8 +16,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.TextView;
 
 import com.ronak.popularmovies.RecyclerViewAdapters.MovieRecyclerViewAdapter;
 
@@ -33,8 +31,7 @@ public  class MainActivity extends AppCompatActivity implements MovieRecyclerVie
     private ArrayList<Movie> movieArrayList;
     private MovieRecyclerViewAdapter movieRecyclerViewAdapter;
 
-    @BindView(R2.id.network_error)
-    TextView noNetView;
+
     @BindView(R2.id.movie_recyclerView)
     RecyclerView movieRecyclerView;
     @BindString(R2.string.movie_detail_key)
@@ -98,7 +95,7 @@ public  class MainActivity extends AppCompatActivity implements MovieRecyclerVie
     public LoaderManager.LoaderCallbacks<ArrayList<Movie>> movieLoaderListener = new LoaderManager.LoaderCallbacks<ArrayList<Movie>>() {
         @Override
         public Loader<ArrayList<Movie>> onCreateLoader(int id, Bundle args) {
-            noNetView.setVisibility(View.INVISIBLE);
+
             return new MovieAsyncClass(MainActivity.this);
         }
 
@@ -107,11 +104,7 @@ public  class MainActivity extends AppCompatActivity implements MovieRecyclerVie
          if (data != null) {
              movieArrayList = data;
              movieRecyclerViewAdapter.setDataSource(movieArrayList);
-             if (listState != null){
-                 gridLayoutManager.onRestoreInstanceState(listState);
-             }else {
-                 noNetView.setVisibility(View.VISIBLE);
-             }
+             if (listState != null) gridLayoutManager.onRestoreInstanceState(listState);
          }
         }
 
