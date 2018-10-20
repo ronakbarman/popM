@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">My Application</string>
+     <string name="popular">popular</string>
+    <string name="title">title</string>
+    <string name="releaseDate">release_date</string>
+    <string name="poster">poster</string>
+    <string name="addFav">Add to Favorites</string>
+    <string name="addedFav">Already in Favorites</string>
+    <string name="addFavConf">Added to Favorites!</string>
+    <string name="remFav">Removed from Favorites</string>
+    <string name="plot">overview</string>
+    <string name="posterPath">poster_path</string>
+    <string name="averageVote">vote_average</string>
+    <string name="movie_id_key">movie_id</string>
+    <string name="movie_detail_key">movie</string>
+    <string name="release_date_label">Release Date</string>
+    <string name="vote_average_label">Average Rating</string>
+    <string name="trailers_label">Trailers</string>
+    <string name="reviews_label">Reviews</string>
+    <string name="movie_content_description">Movie Poster</string>
+    <string name="app_settings">Settings</string>
+    <string name="fetch_by_most_popular">popular</string>
+    <string name="fetch_by_top_rated">top_rated</string>
+    <string name="fetch_favorites">favorites</string>
+    <string name="fetch_movie_key">sortKey</string>
+    <string name="fetch_movie_list_title">Fetch Movies By</string>
+    <string name="network_error">Shortest HORROR Story, NO INTERNET!! </string>
+    <string name="share_type">"text/plain"</string>
+    <string name="share_intent_title">Share Options</string>
+    <string name="share_body">Movie Trailer</string>
+    <string name="share_body_title"> Share</string>
+    <string name="scroll_position_key">scrollPosition</string>
+    <string name="recycler_position_key">recyclerPosition</string>
+    <array name="preference_sortBy_label">
+        <item>Top Rated</item>
+        <item>Most Popular</item>
+        <item>Favorites</item>
+    </array>
+    <string name="api_key" translatable="false">000ca5c7827c78a7d0765187d138fae1 </string>
+
+    <array name="preference_sortBy_values">
+        <item>top_rated</item>
+        <item>popular</item>
+        <item>favorites</item>
+    </array>
+    <string name="sortKey">sortKey</string>
+    <string name="share">Share</string>
+</resources>
