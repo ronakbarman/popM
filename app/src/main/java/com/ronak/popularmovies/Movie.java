@@ -65,12 +65,24 @@ public class Movie implements Parcelable {
         }
     };
 
-    public String getmovieId(){ return  Id; }
-    public String getMovieTitle() { return MovieTitle; }
-    public String getMovieReleaseDate(){return ReleaseDate;}
-    public String getAverageVotes(){return AverageVote;}
-    public String getMoviePlot(){return  Plot;}
-    public String getMovieposterpath() {return PosterPath;}
+    public String getmovieId(){
+        return  Id;
+    }
+    public String getMovieTitle() {
+        return MovieTitle;
+    }
+    public String getMovieReleaseDate(){
+        return ReleaseDate;
+    }
+    public String getAverageVotes(){
+        return AverageVote;
+    }
+    public String getMoviePlot(){
+        return  Plot;
+    }
+    public String getMovieposterpath() {
+
+        return PosterPath;}
 
     public void setId(String id) { this.Id = id; }
 

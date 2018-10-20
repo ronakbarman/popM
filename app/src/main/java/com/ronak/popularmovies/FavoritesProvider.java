@@ -43,7 +43,7 @@ public class FavoritesProvider extends ContentProvider {
     }
 
     @Override
-    public String getType(Uri uri) {
+    public String getType(@NonNull Uri uri) {
 
         return null;
     }

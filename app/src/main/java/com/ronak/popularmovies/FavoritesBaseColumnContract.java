@@ -15,7 +15,7 @@ public class FavoritesBaseColumnContract {
         public static final String COLUMN_RELEASE_DATE = "movieReleaseDate";
         public static final String COLUMN_AVERAGE_VOTE = "movieAverageVote";
         public static final String COLUMN_PLOT = "moviePlot";
-        public static final String COLUMN_POSTER_PATH = "moviePosterPath";
+        public static final String COLUMN_POSTER_PATH = "PosterPath";
 
 
 
