@@ -13,7 +13,7 @@ public  class ReviewAsyncTask extends android.content.AsyncTaskLoader<ArrayList<
         super(context);
         mBundle = bundle;
     }
-//todo check result equals nll here and in the other classes
+
 
     @Override
     public ArrayList<Review> loadInBackground() {
