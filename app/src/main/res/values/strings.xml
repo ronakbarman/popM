@@ -36,7 +36,7 @@
         <item>Most Popular</item>
         <item>Favorites</item>
     </array>
-    <string name="api_key" translatable="false">000ca5c7827c78a7d0765187d138fae1 </string>
+    <string name="api_key" translatable="false">YOUR API HERE </string>
 
     <array name="preference_sortBy_values">
         <item>top_rated</item>

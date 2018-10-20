@@ -21,14 +21,14 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class NetworkUtilities {
-//todo check path later
-    // todo check json of all
+
+    // todo API
     private static final String scheme = "https";
     private static final String uri_path1 = "3";
     private static final String uri_path2 = "movie";
     private static final String authority = "api.themoviedb.org";
     private static final String query = "api_key";
-    private static final String api = "000ca5c7827c78a7d0765187d138fae1";
+    private static final String api = "YOUR API HERE";
     private static final String poster = "https://image.tmdb.org/t/p/w185%s";
     private static final String uri_vendor = "vnd.youtube:";
     private static final String uri_web = "https://www.youtube.com/watch?v=";
